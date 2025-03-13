@@ -1,0 +1,65 @@
+@media (max-width: 840px) {
+    .secondContact {
+        display: none;
+    }
+}
+
+@media (max-width: 595px) {
+    .mainContainer {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .logoName {
+        display: none;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .leftContainer {
+        margin-left: -10p;
+    }
+    .linkTextContainer p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 410px) {
+    .leftContainer {
+        margin-left: -20px;
+        gap: 8px;
+        /* Reduce spacing between elements */
+    }
+
+    .linkTextContainer {
+        gap: 4px;
+        /* Reduce spacing between menu items */
+    }
+
+    .logoName {
+        font-size: 14px;
+        /* Reduce text size */
+    }
+
+    .linkTextContainer p {
+        font-size: 12px;
+        /* Reduce menu text size */
+    }
+
+    .rightContainer {
+        gap: 0px !important;
+        /* Reduce space between icons */
+    }
+
+    svg {
+        width: 18px;
+        height: 18px;
+        /* Reduce icon size */
+    }
+}
+
+@media (max-width: 370px) { 
+    .linkTextContainer p {
+        font-size: 9px;
+    }
+}

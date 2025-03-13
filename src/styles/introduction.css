@@ -1,0 +1,94 @@
+@media (max-width: 970px) {
+    .selfIntroContainer {
+        margin-top: 80px;
+    }
+    .designationContainer {
+        margin-top: 150px;
+    }
+}
+
+@media (max-width: 915px) {
+    .selfIntroContainer {
+        margin-top: 130px;
+    }
+}
+
+@media (max-width: 830px) {
+    .designationContainer {
+        margin-top: 220px;
+    }
+}
+
+@media (max-width: 770px) {
+    .mainText {
+        margin-top: 20px;
+
+    }
+    .introContainer {
+        flex-direction: column;
+        /* Stack items vertically */
+        gap: 40px;
+        /* Increase spacing between blocks */
+    }
+
+    .myImageContainer,
+    .selfIntroContainer {
+        width: 100%;
+        /* Make each section full-width */
+    }
+
+    .selfIntroContainer {
+        margin-top: -20px;
+        /* Add spacing between first and second text */
+    }
+
+    .selfIntroContainer p:first-child {
+        margin-bottom: 20px;
+        /* Add spacing between first and second text */
+    }
+
+    .designationContainer {
+        margin-top: 40px;
+        /* Add spacing between first and second text */
+    }
+}
+
+@media (max-width: 610px) {
+    .mainText {
+        margin-top: 40px;
+
+    }
+
+    .selfIntroContainer p:first-child {
+        margin-top: 110px;
+        /* Add spacing between first and second text */
+    }
+
+    .designationContainer {
+        margin-top: 140px;
+        /* Add spacing between first and second text */
+    }
+}
+
+
+@media (max-width: 510px) {
+    .selfIntroContainer p:first-child {
+        margin-top: 250px;
+        /* Add spacing between first and second text */
+    }
+    .designationContainer {
+        margin-top: 270px;
+        /* Add spacing between first and second text */
+    }
+    
+}
+
+
+@media (max-width: 435px) {
+    .designationContainer {
+        margin-top: 350px;
+        /* Add spacing between first and second text */
+    }
+
+}
+

@@ -1,0 +1,44 @@
+@media (max-width: 1030px) {
+    .mainContainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .headingContainer,
+    .servicesContainer {
+        width: 100%;
+        text-align: center;
+    }
+    .headingContainer {
+        margin-left: 100px;
+    }
+
+    .servicesContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Centers the service boxes */
+        justify-content: center;
+    }
+
+    .servicesContainer>div {
+        width: 90%;
+        /* Increase the width of the service boxes */
+    }
+    .serviceFirstContainer {
+        margin-top: 70px;
+    }
+}
+
+@media (max-width: 1030px) {
+    .headingContainer {
+        width: 70%;
+    }
+    .mainHeading {
+        font-size: 30px;
+    }
+    .subHeading {
+        font-size: 20px;
+    }
+}

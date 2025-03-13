@@ -1,0 +1,87 @@
+@media (max-width: 948px) {
+    .formContainer {
+        margin-left: 20px;
+    }
+}
+
+
+@media (max-width: 940px) {
+    .bgContactText {
+        font-size: 10rem;
+    }
+    .contactSubContainer {
+        margin-top: -20px;
+    }
+}
+
+
+@media (max-width: 870px) {
+    .detailandFormContainer {
+        flex-direction: column;
+        /* Stack elements vertically */
+        align-items: center;
+        /* Center align elements */
+        text-align: center;
+        gap: 20px;
+        /* Add space between them */
+    }
+
+    .addressContainer,
+    .formContainer {
+        width: 100%;
+        /* Take full width */
+    }
+
+    .formContainer {
+        margin-top: 0;
+        /* Remove any extra margin if needed */
+    }
+}
+
+
+
+@media (max-width: 620px) {
+    .bgContactText {
+        font-size: 6rem;
+    }
+
+    .contactSubContainer {
+        margin-top: -40px;
+    }
+}
+
+@media (max-width: 390px) {
+    .bgContactText {
+        font-size: 5rem;
+    }
+
+    .contactSubContainer {
+        margin-top: -50px;
+    }
+}
+
+@media (max-width: 500px) {
+    .contactLettersContainer {
+        display: none;
+    }
+
+    .addressContainer {
+        margin-left: 4px;
+    }
+
+    .myAddressText {
+        font-size: 2rem;
+    }
+
+    .addressSubText {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 430px) {
+    .detailandFormContainer {
+        padding-left: 10px;
+        padding-right: 30px;
+    }
+}
+
