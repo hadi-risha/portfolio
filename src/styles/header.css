@@ -1,3 +1,6 @@
+.linkTextContainer p {
+    font-size: 1rem;
+}
 @media (max-width: 840px) {
     .secondContact {
         display: none;
