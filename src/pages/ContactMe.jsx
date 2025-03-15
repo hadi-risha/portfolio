@@ -40,9 +40,7 @@ const ContactMe = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!validateForm() || loading) return;
-
     setLoading(true);
-
     try {
       await emailjs.send(
         serviceId,
@@ -68,7 +66,7 @@ const ContactMe = () => {
     } catch (error) {
       alert("Failed to send message. Please try again.");
     } finally {
-      setLoading(false); // Reset loading state
+      setLoading(false); 
     }
   };
 
@@ -102,7 +100,6 @@ const ContactMe = () => {
         </div>
       </div>
 
-      {/* <div className="detailandFormContainer px-20 mt-20 flex justify-between"> */}
       <div className="detailandFormContainer px-20 mt-20 flex flex-col md:flex-row justify-between items-center gap-10">
         <div className="addressContainer py-20  bg-gray-100 flex space-x-20">
           <div className="contactLettersContainer text-sm text-gray-500">
@@ -280,7 +277,7 @@ const ContactMe = () => {
                 : "bg-white text-black hover:bg-black hover:text-white"
             }`}
             type="submit"
-            disabled={loading} // Disable button while sending
+            disabled={loading} // disable button while sending
           >
             {loading ? "Sending..." : "Submit"}
           </button>

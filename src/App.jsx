@@ -23,6 +23,11 @@ function App() {
 
 export default App;
 
+
+
+
+
+// FONTS
 {
   /* <p className="font-[Inter] font-light">This is Inter Light</p>
     <p className="font-[Inter] font-semibold">This is Inter SemiBold</p>

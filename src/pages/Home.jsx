@@ -6,7 +6,7 @@ import Services from "../components/Services";
 import Footer from "../components/Footer";
 
 const Home = () => {
-    const introRef = useRef(null); // Store reference for Introduction
+    const introRef = useRef(null); // store reference for Introduction component
 
     return (
         <div>

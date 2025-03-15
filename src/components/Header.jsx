@@ -13,37 +13,7 @@ const Header = () => {
   ];
 
   return (
-    // <div className="mainContainer mx-20 max-w-screen h-20 py-4 px-8 flex items-center bg-white rounded-2xl justify-between">
     <div className="mainContainer mx-20 max-w-screen h-20 py-4 px-8 flex flex-wrap items-center bg-white rounded-2xl justify-between gap-6">
-      {/* <div className="leftContainer flex space-x-10">
-        <Link to="/">
-          <p className="logoName font-[Inter] font-bold">HADI RISHA</p>
-        </Link>
-        <div className="linkTextContainer flex space-x-6">
-          {menuItems.map((item) => (
-            <Link
-              key={item.name}
-              to={item.path}
-              onClick={(e) => {
-                if (item.action?.current) {
-                  e.preventDefault(); 
-                  item.action.current(); 
-                }
-              }}
-              className="relative cursor-pointer group"
-            >
-              <span
-                className={`absolute -top-2 left-0 bg-black transition-all duration-300 ${
-                  location.pathname === item.path
-                    ? "w-full h-[1px]" 
-                    : "w-0 h-[1px] group-hover:w-full group-hover:h-[1.5px]" 
-                }`}
-              ></span>
-              <p className={`text-gray-800 `}>{item.name}</p>
-            </Link>
-          ))}
-        </div>
-      </div> */}
       <div className="leftContainer flex space-x-6 sm:space-x-4">
         <Link to="/">
           <p className="logoName font-[Inter] font-bold text-lg sm:text-sm">

@@ -10,7 +10,7 @@ import ather from "../assets/ather.png";
 
 const ProjectModal = ({ isOpen, onClose, project }) => {
   console.log("kkkkk", project);
-  if (!isOpen) return null; // Prevents rendering when not open
+  if (!isOpen) return null; // prevents rendering when not open
 
   const projectDetails = [
     {
@@ -140,11 +140,10 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
     },
   ];
 
-  // Find the matching project based on ID
   const selectedProject = projectDetails.find((p) => p.id === project.id);
 
   if (!selectedProject) {
-    return null; // Avoid rendering if project is not found
+    return null; 
   }
 
   return (
@@ -160,7 +159,6 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
         onClick={(e) => e.stopPropagation()}
         style={{ maxHeight: "80vh", marginTop: "5vh", marginBottom: "5vh" }}
       >
-        {/* Close Button (Adjusted Position) */}
         <button
           onClick={onClose}
           className="absolute top-4 right-6 text-gray-600 hover:text-black text-2xl cursor-pointer"
@@ -168,16 +166,16 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
           ✖
         </button>
 
-        {/* Scrollable Content Area */}
+        {/* scrollable content area */}
         <div
-          className="mt-10 overflow-y-auto flex-1 pr-4" // pr-4 creates space for scrollbar
+          className="mt-10 overflow-y-auto flex-1 pr-4"
           style={{
             maxHeight: "70vh",
             scrollbarWidth: "thin",
             scrollbarColor: "#c0c0c0 transparent",
           }}
         >
-          {/* Custom Scrollbar Styling */}
+          {/* custom scrollbar styling */}
           <style>
             {`
               /* Thin Scrollbar */
@@ -194,20 +192,16 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
             `}
           </style>
 
-          {/* Project Image */}
           <img
             src={selectedProject.imgUrl}
             alt={selectedProject.name}
             className="w-full h-64 object-cover rounded-md mb-4"
           />
 
-          {/* Project Name */}
           <h2 className="text-2xl font-bold">{selectedProject.name}</h2>
 
-          {/* Project Description */}
           <p className="mt-2 text-gray-700">{selectedProject.description}</p>
 
-          {/* Tech Stack Section (Optional) */}
           {selectedProject.tech && (
             <>
               <p className="mt-4 font-semibold">Tech Used:</p>
@@ -221,7 +215,6 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
             </>
           )}
 
-          {/* Features Section (Optional) */}
           {selectedProject.features && (
             <div className="mt-4 space-y-4">
               {selectedProject.features.map((feature, index) => (
@@ -238,7 +231,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
           )}
         </div>
 
-        {/* Buttons - Visit Website & GitHub */}
+        {/* buttons - visit website & gitHub */}
         <div className="mt-4 flex justify-between items-center">
           {selectedProject.websiteUrl && (
             <button
@@ -248,7 +241,6 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
               Visit Project
             </button>
           )}
-
           {selectedProject.githubLink && (
             <a
               href={selectedProject.githubLink}

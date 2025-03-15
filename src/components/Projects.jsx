@@ -34,7 +34,7 @@ const projects = [
     imgSrc: lofticore,
     description: "E-commerce platform",
     link: "https://lofticore-ecommerce.vercel.app/",
-    status: "In Progress", // This will be displayed only for Lofticore
+    status: "In Progress", 
   },
   {
     id: 4,
@@ -239,14 +239,13 @@ const Projects = () => {
         </div>
 
         <div className="mb-20 px-20 w-full space-y-36">
-          {/* Heading Section */}
           <div className="workHeadingContainer relative w-full flex justify-center items-center py-20">
-            {/* Background Text */}
+            {/* background Text */}
             <p className="bgWorkTitle absolute text-[16rem] font-playfair text-gray-300 opacity-50 select-none">
               Works
             </p>
 
-            {/* Foreground Texts */}
+            {/* foreground Texts */}
             <div className="subTextContainer absolute top-10/12 transform -translate-y-1/2 flex flex-col items-center space-y-4">
               <p className="portfolioText text-[12px] text-[#bfbfbf] font-semibold">
                 PORTFOLIO
@@ -257,7 +256,7 @@ const Projects = () => {
             </div>
           </div>
 
-          {/* Project Details Section */}
+          {/* project details section */}
           <div className="projectMainContainer mt-20">
             <div className="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-1 gap-12">
               {projects.map((project, index) => (
@@ -281,7 +280,6 @@ const Projects = () => {
                       )}
                     </p>
                     <p
-                      // onClick={() => setIsModalOpen(true)}
                       onClick={() => openModal(project.id)}
                       className="mt-6 font-playfair font-semibold underline text-blue-600 cursor-pointer"
                     >
@@ -308,7 +306,7 @@ const Projects = () => {
                 <ProjectModal
                   isOpen={isModalOpen}
                   onClose={() => setIsModalOpen(false)}
-                  project={selectedProject} // Pass selected project data
+                  project={selectedProject} // pass selected project data
                 />
               )}
             </AnimatePresence>

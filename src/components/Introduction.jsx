@@ -17,13 +17,13 @@ const Introduction = () => {
     const container = containerRef.current;
 
     const startScrolling = () => {
-      let scrollAmount = container.scrollWidth / 2; // Start from the right
-      const scrollSpeed = 1; // Adjust speed
+      let scrollAmount = container.scrollWidth / 2; // start from the right
+      const scrollSpeed = 1; // adjust speed
 
       const scroll = () => {
-        scrollAmount -= scrollSpeed; // Move leftward
+        scrollAmount -= scrollSpeed; // move leftward
         if (scrollAmount <= 0) {
-          scrollAmount = container.scrollWidth / 2; // Reset to the end
+          scrollAmount = container.scrollWidth / 2; // reset to the end
         }
         container.scrollTo({
           left: scrollAmount,
@@ -40,7 +40,6 @@ const Introduction = () => {
 
   return (
     <div className="mx-20 mb-28 max-w-screen min-h-screen py-4 bg-gray-100">
-      {/* <p className="w-full text-[10.9vw] font-bold">WEB DEVELOPER</p> */}
       <p className="mainText w-full font-bold text-[10.9vw] max-[1350px]:text-[9vw] max-[1200px]:text-[8vw] max-[1024px]:text-[7vw] max-[768px]:text-[6vw] max-[640px]:text-[5vw]">
         WEB DEVELOPER
       </p>
@@ -82,9 +81,6 @@ const Introduction = () => {
           <div key={i} className="flex space-x-10 items-center">
             {developerOptions.map((option, index) => (
               <React.Fragment key={`${index}-${i}`}>
-                {/* <p className={`text-2xl ${index === 0 ? "ml-10" : ""}`}>
-                  {option}
-                </p> */}
                 <p
                   className={`text-2xl max-[1210px]:text-xl max-[1024px]:text-lg max-[768px]:text-base ${
                     index === 0 ? "ml-10" : ""
