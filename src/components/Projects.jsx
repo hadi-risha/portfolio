@@ -26,7 +26,8 @@ const projects = [
     name: "Time Trove",
     imgSrc: TT2,
     description: "E-commerce platform",
-    link: "https://timetrove.hadirisha.online/",
+    // link: "https://timetrove.hadirisha.online/",
+    link: "http://13.236.183.171:3031",
   },
   {
     id: 3,
@@ -34,7 +35,7 @@ const projects = [
     imgSrc: lofticore,
     description: "E-commerce platform",
     link: "https://lofticore-ecommerce.vercel.app/",
-    status: "In Progress", 
+    status: "In Progress",
   },
   {
     id: 4,
