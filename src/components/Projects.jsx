@@ -27,7 +27,7 @@ const projects = [
     imgSrc: TT2,
     description: "E-commerce platform",
     // link: "https://timetrove.hadirisha.online/",
-    link: "http://13.236.183.171:3031",
+    link: "http://13.211.234.157:3031",
   },
   {
     id: 3,
