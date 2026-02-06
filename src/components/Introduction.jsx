@@ -53,21 +53,22 @@ const Introduction = () => {
           />
         </div>
         <div className="selfIntroContainer h-96 w-5/12 space-y-10 flex flex-col justify-center">
+        
           <p className="text-2xl font-medium">
-            Hadi Risha is a skilled MERN stack developer and product designer
-            based in Calicut, specializing in building innovative web
-            applications.
+            I’m Hadi Risha, a MERN stack developer and product designer based in
+            Calicut, focused on building web applications that solve real
+            problems.
           </p>
+
           <p>
-            With a keen eye for detail and a passion for crafting seamless user
-            experiences, she specializes in both frontend and backend
-            development using the MERN stack. She builds intuitive, scalable,
-            and user-centered digital products, focusing on understanding user
-            needs, optimizing performance, and balancing aesthetics with
-            functionality. Whether developing social media platforms, web
-            applications, or complex systems, she is dedicated to creating
-            impactful solutions that enhance user engagement and drive business
-            success.
+            I have a keen eye for detail and a passion for crafting seamless
+            user experiences. I work on both frontend and backend development
+            using the MERN stack, building intuitive, scalable, and
+            user-centered digital products. I focus on understanding user needs,
+            optimizing performance, and balancing aesthetics with functionality.
+            Whether I’m developing social media platforms, web applications, or
+            complex systems, I aim to create solutions that enhance user
+            engagement and deliver meaningful results.
           </p>
         </div>
       </div>

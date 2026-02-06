@@ -1,14 +1,11 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import connect from "../assets/connect.png";
-import TT from "../assets/TT.png";
 import TT2 from "../assets/TT2.png";
 import lofticore from "../assets/lofticore.png";
 import blogApp from "../assets/blogApp.png";
 import chatApp from "../assets/chatApp.png";
-import razer from "../assets/razer.png";
 import ather from "../assets/ather.png";
-import { Link } from 'react-router-dom';
-import { motion, AnimatePresence } from "framer-motion";
+import {  AnimatePresence } from "framer-motion";
 import ProjectModal from "./ProjectModal";
 import "../styles/projects.css"
 
@@ -19,7 +16,7 @@ const projects = [
     name: "Connect",
     imgSrc: connect,
     description: "E-learning platform",
-    link: "https://connect-client-delta.vercel.app/",
+    link: "https://connect-client-ltst.vercel.app/login",
   },
   {
     id: 2,
@@ -179,7 +176,7 @@ const Projects = () => {
           </svg>
         ),
       },
-      ,
+      
       {
         name: "CSS",
         svg: (
