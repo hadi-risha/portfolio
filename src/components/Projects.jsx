@@ -23,8 +23,8 @@ const projects = [
     name: "Time Trove",
     imgSrc: TT2,
     description: "E-commerce platform",
-    // link: "http://13.211.234.157:3031",
-    link: "http://timetrove.duckdns.org:3031",
+    //link: "http://timetrove.duckdns.org:3031",
+    link: "http://timetrove.ddns.net/",
   },
   {
     id: 3,
@@ -48,13 +48,13 @@ const projects = [
     description: "Chat Application",
     link: "https://chat-app-prod-ae4i.onrender.com/",
   },
-  {
-    id: 6,
-    name: "Ather",
-    imgSrc: ather,
-    description: "Static page",
-    link: "https://ather.onrender.com",
-  },
+  // {
+  //   id: 6,
+  //   name: "Ather",
+  //   imgSrc: ather,
+  //   description: "Static page",
+  //   link: "https://ather.onrender.com",
+  // },
 ];
 
 const Projects = () => {

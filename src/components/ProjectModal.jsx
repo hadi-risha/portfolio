@@ -56,8 +56,8 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
       ],
       tech: ["MongoDB", "Express.js", "EJS", "Node.js", "JavaScript", "CSS"],
       githubLink: "https://github.com/hadi-risha/Time-Trove-ecommerce",
-      // websiteUrl: "http://13.211.234.157:3031/",
-      websiteUrl: "http://timetrove.duckdns.org:3031/",
+      //websiteUrl: "http://timetrove.duckdns.org:3031/",
+      websiteUrl: "http://timetrove.ddns.net/",
     },
     {
       id: 3,
