@@ -3,8 +3,8 @@ import connect from "../assets/connect.png";
 import TT2 from "../assets/TT2.png";
 import lofticore from "../assets/lofticore.png";
 import blogApp from "../assets/blogApp.png";
-import chatApp from "../assets/chatApp.png";
-import ather from "../assets/ather.png";
+// import chatApp from "../assets/chatApp.png";
+// import ather from "../assets/ather.png";
 import {  AnimatePresence } from "framer-motion";
 import ProjectModal from "./ProjectModal";
 import "../styles/projects.css"
@@ -13,26 +13,25 @@ import "../styles/projects.css"
 const projects = [
   {
     id: 1,
+    name: "Lofticore",
+    imgSrc: lofticore,
+    description: "E-commerce marketplace",
+    link: "https://lofticore-2.vercel.app/",
+  },
+  {
+    id: 2,
     name: "Connect",
     imgSrc: connect,
     description: "E-learning platform",
     link: "https://connect-client-ltst.vercel.app/login",
   },
   {
-    id: 2,
+    id: 3,
     name: "Time Trove",
     imgSrc: TT2,
     description: "E-commerce platform",
     //link: "http://timetrove.duckdns.org:3031",
     link: "http://timetrove.ddns.net/",
-  },
-  {
-    id: 3,
-    name: "Lofticore",
-    imgSrc: lofticore,
-    description: "E-commerce platform",
-    link: "https://lofticore-ecommerce.vercel.app/",
-    status: "In Progress",
   },
   {
     id: 4,
@@ -41,13 +40,13 @@ const projects = [
     description: "Blog Application",
     link: "https://blog-app-mvyw.onrender.com/",
   },
-  {
-    id: 5,
-    name: "Chat App",
-    imgSrc: chatApp,
-    description: "Chat Application",
-    link: "https://chat-app-prod-ae4i.onrender.com/",
-  },
+  // {
+  //   id: 5,
+  //   name: "Chat App",
+  //   imgSrc: chatApp,
+  //   description: "Chat Application",
+  //   link: "https://chat-app-prod-ae4i.onrender.com/",
+  // },
   // {
   //   id: 6,
   //   name: "Ather",

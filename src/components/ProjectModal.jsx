@@ -1,5 +1,5 @@
 import React from 'react'
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import connect from "../assets/connect.png";
 import TT2 from "../assets/TT2.png";
 import lofticore from "../assets/lofticore.png";
@@ -15,6 +15,59 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
   const projectDetails = [
     {
       id: 1,
+      name: "Lofticore",
+      imgUrl: lofticore,
+      description:
+        "A full-stack furniture and decor marketplace built with the MERN stack and TypeScript. Customers browse a catalogue, preview products in 3D and in their own room with augmented reality on their phone, and pay online or on delivery. Order status updates arrive live, without refreshing the page.\n\nIt has five roles: customer, seller, delivery partner, admin and super admin. Sellers manage their own products and stock, and admins approve products and read sales reports. Search tolerates typos, a Gemini-powered assistant answers product questions, and recommendations follow what a user has viewed and bought.\n\nSecurity uses argon2 password hashing, short-lived access tokens with rotating refresh cookies, and two-factor authentication for staff. The API has 170 automated tests and OpenAPI documentation, and the app runs in production with Sentry error tracking and a public status page.",
+      features: [
+        {
+          "Payment Methods":
+            "Razorpay (test mode), UPI (demo), Cash on Delivery",
+        },
+        {
+          Authentication: [
+            "Email and password",
+            "Google sign-in",
+            "2FA for staff",
+          ],
+        },
+        { "3D and AR": "Product viewer with AR on mobile" },
+        { "Live Updates": "Order status via Server-Sent Events" },
+        { Search: "Typo-tolerant, ranked by relevance (Meilisearch)" },
+        { "AI Assistant": "Gemini shopping chatbot" },
+        { Shopping: "Reviews and ratings, wishlist, guest cart" },
+        { "Seller Tools": "Dashboard, inventory and stock reservation" },
+        { Admin: "Approvals, reports and audit log" },
+        { Observability: "OpenAPI docs, status page, Sentry" },
+      ],
+      tech: [
+        "MongoDB (Atlas, transactions)",
+        "Express.js",
+        "React.js",
+        "Node.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Vite",
+        "TanStack Query",
+        "Zustand",
+        "Zod",
+        "JWT with rotating refresh tokens",
+        "argon2",
+        "Redis",
+        "BullMQ",
+        "Server-Sent Events",
+        "Meilisearch",
+        "Razorpay",
+        "Cloudinary",
+        "Docker",
+        "Vitest and Playwright",
+        "GitHub Actions",
+      ],
+      githubLink: "https://github.com/hadi-risha/Lofticore-2",
+      websiteUrl: "https://lofticore-2.vercel.app/",
+    },
+    {
+      id: 2,
       name: "Connect",
       imgUrl: connect,
       description:
@@ -46,7 +99,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
       websiteUrl: "https://connect-client-ltst.vercel.app",
     },
     {
-      id: 2,
+      id: 3,
       name: "Time Trove",
       imgUrl: TT2,
       description:
@@ -58,33 +111,6 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
       githubLink: "https://github.com/hadi-risha/Time-Trove-ecommerce",
       //websiteUrl: "http://timetrove.duckdns.org:3031/",
       websiteUrl: "http://timetrove.ddns.net/",
-    },
-    {
-      id: 3,
-      name: "Lofticore",
-      "In progress": true,
-      imgUrl: lofticore,
-      description:
-        "Lofticore is an e-commerce platform currently under development using the MERN stack with TypeScript. It will offer a seamless shopping experience with AI-powered product recommendations based on previous user interactions. Users can authenticate via GitHub, Google, or standard email/password login. The platform will support multiple payment options, including PayPal/Stripe, Cash on Delivery (COD), and Wallet. A guest cart feature allows users to add products before logging in, ensuring convenience. Additionally, customers can review and rate products, and all essential e-commerce functionalities will be included for a smooth and engaging shopping experience.",
-      features: [
-        { "Payment Methods": "PayPal, Cash on Delivery (COD), Wallet" },
-        { Authentication: ["Google Authentication", "GitHub Authentication"] },
-      ],
-      tech: [
-        "mongoDB",
-        "Express.js",
-        "React.js",
-        "Node.js",
-        "Javascript",
-        "Typescript",
-        "TalwindCss",
-        "JWT",
-        "bcrypt",
-        "Redux toolkit",
-        "Refresh token",
-      ],
-      githubLink: "https://github.com/hadi-risha/lofticore-ecommerce",
-      websiteUrl: "https://lofticore-ecommerce.vercel.app/",
     },
     {
       id: 4,
