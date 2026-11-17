@@ -3,7 +3,7 @@ import connect from "../assets/connect.png";
 import TT2 from "../assets/TT2.png";
 import lofticore from "../assets/lofticore.png";
 import blogApp from "../assets/blogApp.png";
-// import chatApp from "../assets/chatApp.png";
+import chatApp from "../assets/chatApp.png";
 // import ather from "../assets/ather.png";
 import {  AnimatePresence } from "framer-motion";
 import ProjectModal from "./ProjectModal";

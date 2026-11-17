@@ -1,5 +1,5 @@
 import React from 'react'
-// import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 import connect from "../assets/connect.png";
 import TT2 from "../assets/TT2.png";
 import lofticore from "../assets/lofticore.png";
